@@ -1,0 +1,153 @@
+.latest-container{
+    display: flex;
+    flex-direction: column;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    /* margin-right: 4rem;
+    margin-left: 4rem; */
+    margin-top: 3rem;
+}
+.circle1,
+.circle2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.lastest1{
+    display: flex;
+    flex-direction: column;
+    background: #f8c3c3;
+    border-radius: 50%;
+    height: 400px;
+    width: 400px;
+    margin-bottom: 0;
+    justify-content: center;
+    align-items: center;
+    animation: upDownAnimation 2s infinite ease-in-out;
+}
+.line1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2px;
+    width: 400px;
+    background: #f0a0a0;
+    animation: upDownAnimation 2s infinite ease-in-out;
+}
+.line1::after{
+    content: 'Hi! Simra';
+    margin-bottom: 2rem;
+    font-family: 'Philosopher';
+}
+.line2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2px;
+    margin-left: auto;
+    margin-right: -25rem;
+    width: 400px;
+    background: #f0a0a0;
+    animation: upDownAnimation 2s infinite ease-in-out;
+    
+}
+.line2::after{
+    content: 'Hi! Simra';
+    margin-bottom: 2rem;
+    font-family: 'Philosopher';
+}
+@keyframes upDownAnimation {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px); /* Adjust the distance of upward movement */
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+.lastest2{
+    display: flex;
+    flex-direction: column;
+    background: #f8c3c3;
+    border-radius: 50%;
+    height: 400px;
+    width: 400px;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-bottom: 0;
+    margin-top: 0; animation: upDownAnimation 2s infinite ease-in-out;
+}
+.circle3{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+.line3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2px;
+    width: 400px;
+    background: #f0a0a0;
+    animation: upDownAnimation 2s infinite ease-in-out;
+}
+.line3::after{
+    content: 'Hi! Simra';
+    margin-bottom: 2rem;
+    font-family: 'Philosopher';
+}
+.lastest3{
+    display: flex;
+    flex-direction: column;
+    background: #f8c3c3;
+    border-radius: 50%;
+    height: 400px;
+    width: 400px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0;
+    animation: upDownAnimation 2s infinite ease-in-out;
+}
+.latest-btn{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    width: 16em;
+    height: 3em;
+    border-radius: 30em;
+    font-size: 15px;
+    border:none;
+    position: relative;
+    cursor: pointer;
+    font-family: 'Philosopher';
+    font-weight: 200;
+    font-size: 1rem;
+    overflow: hidden;
+    z-index: 1;
+    margin-bottom: 2rem;
+    padding-top: 0.8rem;
+    margin-top: 1.5rem;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+}
+.latest-btn::before{
+    content: '';
+    width: 0;
+    height: 3em;
+    border-radius: 30em;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(to right, #0fd850 0%, #f9f047 100%);
+    transition: 0.5s ease;
+    display: block;
+    color: white;
+    z-index: -1;
+}
+.latest-btn:hover::before{
+    width: 16em;
+    color: white;
+}

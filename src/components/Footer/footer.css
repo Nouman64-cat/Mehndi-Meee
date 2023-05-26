@@ -1,0 +1,71 @@
+.footer-container{
+    display: flex;
+    flex-direction: row;
+    background: #eee;
+    padding-bottom: 2rem;
+    align-items: center;
+    justify-content: center;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    border-radius: 50% 50% 0 0;
+}
+.footer-header{
+    font-family: 'Philosopher';
+    font-size: 3.5rem;
+    margin-top: 3rem;
+    opacity: 0.8;
+    display: flex;
+    align-self: center;
+}
+.footer-content{
+    display: flex;
+    flex-direction: column;
+}
+.footer-content h1{
+    font-family: 'Philosopher';
+    font-size: 3.5rem;
+    margin-bottom: 0;
+    margin-top: 2rem;
+    opacity: 0.8;
+}
+.footer-content p{
+    font-family: 'Poppins';
+    font-size: 1.2rem;
+    opacity: 0.7;
+    margin-bottom: 0;
+}
+
+.whatsapp-contact{
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+}
+.whatsapp-contact p{
+    margin-top: 2px;
+    margin-left: 6px;
+}
+.whats-app-icon:hover{
+    color: #25D366;
+}
+.follow{
+    margin-top: 1rem;
+    font-family: 'Philosopher';
+    font-size: 1.5rem;
+    align-self: center;
+}
+.other-links{
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 5px;
+}
+.facebook-icon:hover{
+    cursor: pointer;
+    color: blue;
+}
+.instagram-icon:hover{
+    color: #f09433;
+    cursor: pointer;
+}
